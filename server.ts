@@ -14,9 +14,9 @@ async function accessTemple (payload: TempleAccess) {
             method: 'POST',
             body: JSON.stringify(payload),
             headers: {
-                "API-KEY": process.env.API_KEY,
-                "Content-Type": "application/json"
-            }
+                "Content-Type": "application/json",
+                "API-KEY": process.env.API_KEY                
+            },
         });
 
         if (!resp.ok) {
