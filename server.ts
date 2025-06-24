@@ -8,7 +8,6 @@ type TempleAccess = {
 
 async function accessTemple (payload: TempleAccess) {
     const url = `${process.env.API_URL}/v1/s1/e4/solution`;
-    console.log('url', url)
     try {
         const resp = await fetch(url, {
             method: 'POST',
